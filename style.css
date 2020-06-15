@@ -1,0 +1,66 @@
+body {
+	background-color: #ffffff;
+  
+  perspective: 1500px;
+  height: 100vh;
+}
+
+section {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  
+  transform-style: preserve-3d;
+  backface-visibility: hidden;
+  
+  transform: rotatex(-320deg) rotateY(30deg);
+}
+
+div.face {
+  position:  absolute;
+  top: 0;
+  left: 0;
+  background-size: cover;
+}
+
+div.face-cover {
+	width: 300px;
+  height: 300px;
+  background-image: url(frame-1.svg);
+  transform: translateX(-50%) translateY(-50%) translateZ(150px);
+}
+
+div.face-side {
+  height: 300px;
+  width: 300px;
+  background-image: url(frame-2.svg);
+  transform: translateX(-50%) translateY(-50%) rotateY(90deg) translateZ(150px);
+}
+
+div.face-spine {
+  height: 300px;
+  width: 300px;
+  background-image: url(frame-3.svg);
+  transform: translateX(-50%) translateY(-50%) rotateY(-90deg) translateZ(150px);
+}
+
+div.face-top {
+  height: 300px;
+  width: 300px;
+  background-image: url(frame-4.svg);
+  transform: translateX(-50%) translateY(-50%) rotateX(90deg) translateZ(150px);
+}
+
+div.face-bottom {
+  height: 300px;
+  width: 300px;
+  background-image: url(frame-5.svg);
+  transform: translateX(-50%) translateY(-50%) rotateX(-90deg) translateZ(150px);
+}
+
+div.face-back {
+  height: 300px;
+  width: 300px;
+  background-image: url(frame-6.svg);
+  transform: translateX(-50%) translateY(-50%) rotateY(-180deg) translateZ(150px);
+}
